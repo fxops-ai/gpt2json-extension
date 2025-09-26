@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "GPT2JSON Archiver",
   "version": "1.0",
-  "description": "Archives GPT chat history as JSON",
+  "description": "Archives GPT chat history into a JSON file.",
   "permissions": [
     "activeTab",
     "downloads",
@@ -23,7 +23,11 @@
     {
       "matches": [
         "*://chat.openai.com/*",
-        "*://grok.x.ai/*"
+        "*://grok.x.ai/*",
+        "*://x.com/*",
+        "*://grok.com/*",
+        "*://claude.ai/*",
+        "*://gemini.google.com/*"
       ],
       "js": ["content.js"]
     }
